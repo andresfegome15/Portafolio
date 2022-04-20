@@ -1,0 +1,590 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000;
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#contenedor_inicio{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+    nav{
+        width: 100%;
+        position: relative;
+        display: block;
+        height: 5vh;
+        border: 1px solid 1px;
+        
+    }
+
+    nav > ul{
+        width: 100% ;
+        height: 40px;
+        display: flex;
+        justify-content: end;
+    }
+
+    nav > ul > li{
+        height: 100%;
+    /*  padding: 0 2rem 0 2rem;  */
+        flex-direction: row;
+        list-style: none;
+        color: #ffffff;
+        text-decoration: none;
+        box-shadow: 10 10 10 10 #ccc;
+    }
+    nav > ul > li> a{
+        list-style: none;
+        color: #ffffff;
+        width: 100%;
+        text-decoration: none;
+        padding-left: 2rem; 
+        padding-right: 2rem;
+        line-height: center;
+        text-align: center;
+        font-size: 1rem;
+        height: 100%;
+    }
+    nav > ul > li >a:hover{
+        background-color: #242620;
+        opacity: .5;
+        /* border-left:1 px solid #ccc;
+        border-right: 1px solid #ccc; */
+    
+    }
+    nav > ul > li > a:focus{
+        color: #34B0BE;
+
+    }
+
+    #banner{
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        display: flex;
+        margin: 0;
+        
+        padding: 0;
+    }
+
+    #banner > div{
+        display:block;
+        flex-direction: row;
+        position: relative;
+    
+        height: 100%;
+    }
+    .medio{
+        border-radius: 100%;
+        background-color: #242635;
+        position: relative;
+        width: 40%;
+        background-image:url(../img/andres.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        height: 100%;
+    }
+    .izquierda{
+        position: relative;
+        text-align: left;
+        width: 30%;
+        z-index: 2;
+        left: 10%;
+    }
+        .izquierda > h1{
+            color: #34B0BE;
+            width: 100%;
+            height: 150px;
+            font-size: 150px;
+
+        }
+        .izquierda > h2{
+            color: #ffffff;
+            width: 100%;
+            height: 100px;
+            border-bottom: 2px solid white;
+            font-size: 50px;
+            line-height: 2;
+        }
+        .izquierda > h4{
+            width: 100%;
+            height: 250px;
+
+            color: #ffffff;
+            font-size: 45px;
+        }
+    .derecha{
+        width: 30%;
+        right: 10%;
+        position: relative;
+    }
+        .derecha > h4{
+            width: 100%;
+            height: 50px;
+
+            color: #ffffff;
+            font-size: 45px;
+        }
+        .derecha > h4:nth-child(1){
+            color: #34B0BE;
+        }
+        .derecha > div{
+            width: 100%;
+            height: 44px;
+
+            display: block;
+            margin-top: 20px;
+        }
+        .derecha > div >ul{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            
+        }
+        .derecha > div > ul > li{
+            height: 40px;
+            width: 40px;
+            flex-direction: row;
+            text-decoration: none;
+            list-style: none;
+            margin-right: 35px;
+            background-color: #D1CECA;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 3;
+        }
+        #enlaces{
+            width: 60%;
+            height: 30vh;
+            padding-left: 20%;
+            padding-right: 20%;
+            display: block;
+            position: relative;
+            top: -60px;
+
+        }
+            #enlaces > ul{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                
+                background-color: #242635;
+                border-radius: 10px 10px 10px 10px;
+            }
+
+            #enlaces > ul > li{
+                text-decoration: none;
+                list-style: none;
+                height: 8rem;
+                flex-direction: row;
+                background-color: #D1CECA;
+                margin-left: 2rem;
+                margin-top: 2rem;
+                border-radius: 5px 5px 5px 5px;
+                width: 12rem;
+                text-align: center;
+            }
+
+            #enlaces > ul > li > a{
+                width: 12rem;
+                height: 8rem;
+                text-align: center;
+                line-height: 12;
+                text-decoration: none;
+                list-style: none;
+            } 
+            #enlaces > ul > li > a >image{
+                width: 100%;
+                height: 100%;
+            }
+.contendor_acerca_de_mi{
+    width: 60%;
+    padding-left: 20%;
+    height: 60vh;
+    padding-right: 20%;
+    padding-top: 15vh;
+    display:block;
+    position: static;
+}
+    .contendor_acerca_de_mi>h2{
+        color: #34B0BE;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 5vh;
+    }
+    .contendor_acerca_de_mi>p{
+        color: #ffffff;
+        text-align: center;
+    }
+.contenedor_servicios{
+    width: 100%;
+    height: 70vh;
+    display:block;
+    position: static;
+}
+    .contenedor_servicios>h2{
+        color: #34B0BE;
+        text-align: center;
+        font-size: 50px;
+    }
+    .contenedor_servicios>ul{
+        width: 64%;
+        height: 70%;
+        padding-left: 18%;
+        padding-right: 18%;
+        list-style: none;
+        gap: 4rem;
+        display: flex;
+        justify-content: space-between;
+       margin-top: 5vh;
+    }
+        .contenedor_servicios>ul>li{
+            width: 100%;
+            height: 90%;
+            background-color: #ffffff;
+            background-image: url(../Vectores/Ellipse\ 14.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 5px 5px 5px 5px;
+            text-align: center;
+            padding-top: 5%;    
+        }
+            .contenedor_servicios > ul > li > a{
+                text-decoration: none;
+                width: 100%;
+                height: 40%;
+            }
+            .contenedor_servicios > ul > li > p{
+                width: 100%;
+                padding-top: 5%;
+                color: #D1CECA;
+                text-align: center;
+            }
+.contenedor_habilidades{
+    margin-top: 10vh;
+    width: 70%;
+    height: 70vh;
+    padding-left: 15%;
+
+    text-align: center;
+}
+    .contenedor_habilidades>h2{
+        color: #34B0BE;
+        margin-bottom: 10vh;
+        font-size: 50px;
+    }
+    .contenedor_habilidades>h4{
+        color: #D1CECA;
+        text-align: left;
+    }
+    .contenedor_habilidades>h6{
+        color: #34B0BE;
+        padding-left: 60%;
+    }
+    .contenedor_habilidades>#h6-m{
+        padding-left: 85%;
+    }
+    .contenedor_habilidades>h6{
+        padding-left: 60%;
+    }
+    .contenedor_habilidades>.porcentajes{
+        width: 100%;
+        height: 15px;
+        background-color: #D1CECA;
+        border-radius: 10px 10px 10px 10px;
+        margin-bottom: 5vh;
+    }
+    .contenedor_habilidades>.porcentajes>.porcentaje-d{
+        width: 80%;
+        height: 100%;
+        background-color: #34B0BE;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .contenedor_habilidades>.porcentajes>.porcentaje-m{
+        width: 95%;
+        height: 100%;
+        background-color: #34B0BE;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .contenedor_habilidades>.porcentajes>.porcentaje-u{
+        width: 80%;
+        height: 100%;
+        background-color: #34B0BE;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .portafolio{
+        margin-top: 10vh;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+    }
+        .portafolio>h2{
+            color: #34B0BE;
+            font-size: 50px;
+
+        }
+        .portafolios{
+            margin-top: 3vh;
+            text-align: center;
+            margin-left: 25%;
+            width: 50%;
+            height: 67vh;
+        }
+
+        .contenedor_contactos{
+            width: 100%;
+            height: 100vh;
+            display:block;
+            position: static;
+           margin-top: 2%;
+           
+        }
+            .contenedor_contactos>h2{
+                color: #34B0BE;
+                text-align: center;
+                font-size: 50px;
+                height: 5%;
+                display: inline-block;
+                padding-left: 45%;
+        
+            }
+            .contenedor_contactos>ul{
+                width: 60%;
+                height: 85%;
+                padding-left: 20%;
+                padding-right: 20%;
+                padding-top: 5%;
+                list-style: none;
+                display: flex;
+               flex-direction: column;
+               
+            }
+                .contenedor_contactos>ul>li{
+                    width: 30%;
+                    height: 40%;
+                    background-color: #ffffff;
+                    background-image: url(../Vectores/Ellipse\ 14.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border-radius: 5px 5px 5px 5px;
+                    text-align: center;   
+                     
+                }
+                .contenedor_contactos>ul>li:nth-child(2){
+                    align-self: flex-end;
+                }
+                    .contenedor_contactos> ul > li > a{
+                        text-decoration: none;
+                        width: 100%;
+                        height: auto;
+                        color: #000;
+                        font-size: 1.5rem;
+                        
+                      }
+                    .contenedor_contactos> ul > li > a>img{
+                        width: 100%;
+                        height: 40%;
+                        padding-top: 14%;
+                    }
+                    .contenedor_contactos> ul > li > p{
+                        width: 100%;
+                        color: #D1CECA;
+                        text-align: center;
+                    }
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: #242635;
+    color: #34B0BE;
+    text-align: center;
+    display: block;
+    position: static;
+    align-items: center;
+    display: inline-block;
+}
+
+        @media all and (max-width:760px) {
+            body{
+                font-size: 16px;
+                border: solid 1px red;
+            }
+            nav{display: none;}
+            #contenedor_inicio{
+                width: 100%;
+                height: 400px;
+                margin-bottom: 80px;
+            }
+            #banner{border: solid 1px red;
+                width: 100%;
+                height: 65vh;
+                min-height: 330px;
+                max-height: 350px;
+                max-width: 760px;
+                min-width: 400px
+            }
+            .medio{
+                width: 50%;
+                border: solid 1px red;
+                
+            }
+            .izquierda{
+                width: 25%;
+                font-size: 32px;
+                border: solid 1px red;
+            }
+                .izquierda > h1{
+                    font-size: 50px;
+                    height: auto;
+                    border-radius: 5px 5px 5px 5px;
+                    text-align: left;
+                    border-bottom: 5px solid white;
+                }
+                .izquierda > h2{
+                    color: #ffffff;
+                    width: 100%;
+                    height: auto;
+                    font-size: 32px;
+                    border-bottom: none;
+                    text-align: left;
+                    border: solid 1px red;
+                    text-align: le;
+                }
+                .izquierda > h4{
+                    font-size: 18px;
+                }
+            .derecha{
+                width: 25%;
+                border: solid 1px red;
+            }
+            .derecha>h4{font-size: 18px;}
+            #enlaces{
+                min-height: 110px;
+                max-height: 135px;
+            width: 90%;
+            height: 20vh;
+            padding-left: 5%;
+            padding-right: 5%;
+            display: block;
+            position: relative;
+            top: -30px;
+            
+            }
+            #enlaces > ul{
+                height: 100%;
+                width: 100%;
+                gap: 2rem;
+                padding-top: 1.5rem;
+            }
+            #enlaces > ul > li{
+                height: 80%;
+                width: 20%;
+                margin: 0;
+                padding: 0;
+            }
+            #enlaces > ul > li > a{
+                width: 80%;
+                height: 80%;
+                display: block;
+                padding: 10%;
+            } 
+            #enlaces > ul > li > a >img{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            .contendor_acerca_de_mi{
+                width: 90%;
+                padding: 5%;
+                padding-top: 15%;
+                min-height: 200px;
+                max-height: 300px;
+                display: block;
+            }
+                .contendor_acerca_de_mi>h2{
+                    font-size: 32px;
+                    
+                }
+                .contenedor_servicios{
+                   height: 70vh;
+                   max-height: 500px;
+                   min-height: 350px;
+                   overflow: scroll;
+                }
+                    .contenedor_servicios>h2{
+                      font-size: 32px;
+                    }
+                    .contenedor_servicios>ul{
+                        width: 90%;
+                        height: 70%;
+                        padding:5%;
+                        display: flex;
+                        overflow: scroll;
+                        margin: 0;
+                    }
+                        .contenedor_servicios>ul>li{
+                            width: 70%;
+                            min-width: 70%;
+                            height: 90%;
+                            flex-direction: row;
+                        }
+                            .contenedor_servicios > ul > li > a{
+                                text-decoration: none;
+                                width: 100%;
+                                height: 40%;
+                            }
+                            .contenedor_servicios > ul > li > p{
+                                width: 100%;
+                                padding-top: 5%;
+                                color: #D1CECA;
+                                text-align: center;
+                            }
+                            .contenedor_habilidades{
+                                padding:0;
+                                margin: 0;
+                                width: 90%;
+                                padding-left: 5%;
+                                padding-right: 5%;
+                                height: 20vh;
+                            }
+                            .contenedor_habilidades>h2{
+                                font-size: 32px;
+                                margin: 0;
+                                padding-bottom: 30px;
+                            }
+                            .contenedor_habilidades>.porcentajes{
+                                width: 100%;
+                                height: 15px;
+                                background-color: #D1CECA;
+                                border-radius: 10px 10px 10px 10px;
+                                margin-bottom: 2vh;
+                            }
+                    .portafolio{
+                        height: 20vh;
+                        width: 90%;
+                        padding: 5%;
+                    }
+                    .portafolios{
+                        height: 90%;
+                        width: 90%;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                        margin: 0;
+                    }
+                    .portafolio>h2{
+                        font-size: 32px;
+                        height: 10%;
+                        margin-bottom: 30px;
+                    }
+        }
