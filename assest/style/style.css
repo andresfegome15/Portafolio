@@ -68,6 +68,7 @@ body{
 
     #banner{
         width: 100%;
+        max-height: 500px;
         height: 80vh;
         position: relative;
         display: flex;
@@ -418,7 +419,6 @@ footer{
         @media all and (max-width:760px) {
             body{
                 font-size: 16px;
-                border: solid 1px red;
             }
             nav{display: none;}
             #contenedor_inicio{
@@ -426,17 +426,16 @@ footer{
                 height: 400px;
                 margin-bottom: 80px;
             }
-            #banner{border: solid 1px red;
+            #banner{
                 width: 100%;
                 height: 65vh;
                 min-height: 330px;
                 max-height: 350px;
                 max-width: 760px;
-                min-width: 400px
+                min-width: 300px
             }
             .medio{
                 width: 50%;
-                border: solid 1px red;
                 
             }
             .izquierda{
