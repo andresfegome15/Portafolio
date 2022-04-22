@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Andrés González</title>
     <link rel="stylesheet" href="assest/style/style.css">
     
 <link rel="stylesheet" type="text/css" href="engine1/style.css" />
@@ -16,26 +16,31 @@
 <body>
     <div id="contenedor_inicio">
             <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Servicios</a>
-                </li>
-                <li>
-                    <a href="#">Acerca de mí</a>
-                </li>
-                <li>
-                    <a href="#">Mis habilidades</a>
-                </li>
-                <li>
-                    <a href="#">Mi portafolio</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
+                <div id="perfilito"></div>
+                <input type="checkbox" id="select_menu">
+                <label for="select_menu">
+                    <img src="assest/íconos/hamburger.png" alt="" >
+                </label>
+                <ul id="menu">
+                    <li>
+                        <a href="#banner"><img src="assest/íconos/home.png" alt=""> Home</a>
+                    </li>
+                    <li>
+                        <a href="#Servicios"><img src="assest/íconos/security.png" alt=""> Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#Acercademí"><img src="assest/íconos/persona.png" alt=""> Acerca de mí</a>
+                    </li>
+                    <li>
+                        <a href="#Habilidades"><img src="assest/íconos/habilidades.png" alt=""> Mis habilidades</a>
+                    </li>
+                    <li>
+                        <a href="#Portafolio"><img src="assest/íconos/maleta.png" alt=""> Mi portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#Contactos"><img src="assest/íconos/llamada.png" alt=""> Contacto</a>
+                    </li>
+                </ul>
         </nav>
         <div id="banner">
             <div class="perfil izquierda">
@@ -91,13 +96,13 @@
         </div>
     </div>
     <div class="contendor_acerca_de_mi">
-        <h2>Acerca de mí</h2>
+        <h2 id="Acercademí">Acerca de mí</h2>
         <p>Mi nombre es Andrés González, Soy programador de desarrollo web graduado de <b>ACADEMLO</b> de la ciudad de México, 
            tambien soy técnico en sistemas gradiado del INFOTEP en Colombia. He trabajado en proyectos presonal y privados para 
            instituciones de caracter educativo y gubernamental, con programacion NET, con visual estudios y bases de datos bajo el lenguaje de sql </p>
     </div>
     <div class="contenedor_servicios">
-        <h2>Servicios</h2>
+        <h2 id="Servicios">Servicios</h2>
         <ul>
             <li><a href="#"><img src="assest/íconos/iconoir_design-pencil.svg" alt=""></a><h3>UX/UI Desing</h3><p>Desde diseño hasta <br>implementación de desarrollo</p></li>
             <li><a href="#"><img src="assest/íconos/majesticons_speakerphone-line.svg" alt=""></a><h3>Marketing</h3><p>Desde diseño hasta <br>implementación de desarrollo</p></li>
@@ -105,7 +110,7 @@
         </ul>
     </div>
     <div class="contenedor_habilidades">
-        <h2>Mis habilidades</h2>
+        <h2 id="Habilidades">Mis habilidades</h2>
         <h4>Web desing</h4><h6>80%</h6>
         <div class="porcentajes">
             <div class="porcentaje-d"></div>
@@ -120,7 +125,7 @@
         </div>
     </div>
     <div class="portafolio">
-        <h2>Mi portafolio</h2>
+        <h2 id="Portafolio">Mi portafolio</h2>
         <div class="portafolios">
         <div id="wowslider-container1">
             <div class="ws_images"><ul>
@@ -141,7 +146,7 @@
     </div>
     </div>
     <div class="contenedor_contactos">
-        <h2>Contacto</h2>
+        <h2 id="Contactos">Contacto</h2>
         <ul>
             <li><a href="#"><img src="assest/íconos/phone 3.svg" alt=""><strong>Número de celular</strong> </a><p>3042827183</p></li>
             <li><a href="#"><img src="assest/íconos/mail 3.svg" alt=""><strong>E-mail</strong></a><p>andresgon15.af@hotmail.com</p></li>
@@ -150,5 +155,6 @@
     <footer>
         Hecho con ♡ Andrés
     </footer>
+    <script src="assest/js/main.js"></script>
 </body>
 </html>
